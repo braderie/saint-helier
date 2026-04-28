@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Braderie Saint-Hélier</title>
+    <link rel=stylesheet href=https://unpkg.com/missing.css@1.3.0>
+    <style>
+    .is-link {
+        border: none;
+        background: none;
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 1em;
+        box-shadow: none;
+        display: inline-block;
+    }
+    .is-link:hover {
+        box-shadow: none;
+        text-decoration: none;
+        border: 1px solid #000;
+    }
+    </style>
 </head>
 <body>
-    <h1>Braderie Saint-Hélier</h1>
-    <p>Site en construction</p>
+    <header>
+        <h1>Braderie Saint-Hélier</h1>
+    </header>
+    <main>
+        <p>Site en construction</p>
+        <p>L'édition 2026 aura lieu le <strong>27 septembre 2026</strong> de 8h à 18h</p>
+        <p>Pour toutes informations vous pouvez nous contacter à l'adresse email 
+        <button type="button" class="is-link" onclick="return c('bWFpbHRvOmJyYWRlcmllQHNhaW50LWhlbGllci5vcmc=');">braderie@saint-helier.org</button>
+    </p>
+    </main>
+    <script>
+    function c(value) {
+        window.location = atob(value);
+    }   
+    </script>
 </body>
 </html>
